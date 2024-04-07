@@ -12,20 +12,20 @@ public class Vertex
 {
     public string Name { get; set; }
     internal HashSet<Vertex> Neighbors { get; }
-    internal List<Edge> Edges { get; }
+    internal HashSet<Edge> Edges { get; }
 
     public Vertex(string name)
     {
         Name = name;
         Neighbors = new HashSet<Vertex>();
-        Edges = new List<Edge>();
+        Edges = new HashSet<Edge>();
     }
 
     public Vertex(string name, HashSet<Vertex> neighbors)
     {
         Name = name;
         Neighbors = neighbors;
-        Edges = new List<Edge>();
+        Edges = new HashSet<Edge>();
         CreateEdges();
     }
 
@@ -75,8 +75,8 @@ public class Edge
 
 public class Graph
 {
-    private HashSet<Vertex> Vertices { get; }
-    private List<Edge> Edges { get; }
+    public HashSet<Vertex> Vertices { get; }
+    public HashSet<Edge> Edges { get; }
 
     public Graph(Vertex[] vertices, Edge[] edges)
     {
@@ -86,7 +86,13 @@ public class Graph
         Array.ForEach(edges, e => Edges.Add(e));
     }
 
-    public Graph(HashSet<Vertex> vertices, List<Edge> edges)
+    public Graph(List<Vertex> vertices, List<Edge> edges)
+    {
+        Vertices = vertices.ToHashSet();
+        Edges = edges.ToHashSet();
+    }
+
+    public Graph(HashSet<Vertex> vertices, HashSet<Edge> edges)
     {
         Vertices = vertices;
         Edges = edges;
@@ -96,6 +102,12 @@ public class Graph
     {
         Vertices = new();
         Array.ForEach(vertices, v => Vertices.Add(v));
+        Edges = new();
+    }
+
+    public Graph(List<Vertex> vertices)
+    {
+        Vertices = vertices.ToHashSet();
         Edges = new();
     }
 
