@@ -1,13 +1,5 @@
 namespace BoruvkaAlgorithm;
 
-/// <summary>
-/// Represents a vertex in a graph.
-/// </summary>
-/// <remarks>
-/// A vertex is a fundamental part of a graph. It can have a name, 
-/// and it can be connected to other vertices via edges. 
-/// Each vertex maintains a list of its neighboring vertices and edges.
-/// </remarks>
 public class Vertex
 {
     public string Name { get; set; }
@@ -20,31 +12,8 @@ public class Vertex
         Neighbors = new HashSet<Vertex>();
         Edges = new HashSet<Edge>();
     }
-
-    public Vertex(string name, HashSet<Vertex> neighbors)
-    {
-        Name = name;
-        Neighbors = neighbors;
-        Edges = new HashSet<Edge>();
-        CreateEdges();
-    }
-
-    private void CreateEdges()
-    {
-        foreach (var neighbor in Neighbors)
-        {
-            Edges.Add(new Edge(this, neighbor, 0));
-        }
-    }
 }
 
-/// <summary>
-/// Represents an non-oriented weighed edge in a graph.
-/// </summary>
-/// <remarks>
-/// An edge is a connection between two vertices in a graph.
-/// Each edge has a weight associated with it.
-/// </remarks>
 public class Edge
 {
     public Vertex Vertex1 { get; set; }
@@ -78,37 +47,10 @@ public class Graph
     public HashSet<Vertex> Vertices { get; }
     public HashSet<Edge> Edges { get; }
 
-    public Graph(Vertex[] vertices, Edge[] edges)
-    {
-        Vertices = new();
-        Edges = new();
-        Array.ForEach(vertices, v => Vertices.Add(v));
-        Array.ForEach(edges, e => Edges.Add(e));
-    }
-
-    public Graph(List<Vertex> vertices, List<Edge> edges)
-    {
-        Vertices = vertices.ToHashSet();
-        Edges = edges.ToHashSet();
-    }
-
     public Graph(HashSet<Vertex> vertices, HashSet<Edge> edges)
     {
         Vertices = vertices;
         Edges = edges;
-    }
-
-    public Graph(Vertex[] vertices)
-    {
-        Vertices = new();
-        Array.ForEach(vertices, v => Vertices.Add(v));
-        Edges = new();
-    }
-
-    public Graph(List<Vertex> vertices)
-    {
-        Vertices = vertices.ToHashSet();
-        Edges = new();
     }
 
     public Graph(HashSet<Vertex> vertices)
