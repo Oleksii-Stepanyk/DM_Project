@@ -1,4 +1,4 @@
-namespace BoruvkaAlgorithm;
+namespace Boruvka_Algorithm;
 
 public class Vertex
 {

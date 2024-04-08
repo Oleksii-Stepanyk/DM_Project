@@ -1,8 +1,8 @@
-namespace BoruvkaAlgorithm;
+namespace Boruvka_Algorithm;
 
-class ErdosRenyiModel(HashSet<Vertex> vertices, double probability)
+public static class Generator
 {
-    public Graph GenerateGraph()
+    public static Graph GenerateGraph(HashSet<Vertex> vertices, double probability) // Erdős–Rényi model
     {
         Graph graph = new Graph(vertices);
         Random rand = new Random();
@@ -22,5 +22,16 @@ class ErdosRenyiModel(HashSet<Vertex> vertices, double probability)
         }
 
         return graph;
+    }
+
+    public static HashSet<Vertex> GenerateVertices(int count)
+    {
+        var vertices = new HashSet<Vertex>();
+        for (int i = 0; i < count; i++)
+        {
+            vertices.Add(new Vertex(i.ToString()));
+        }
+
+        return vertices;
     }
 }
