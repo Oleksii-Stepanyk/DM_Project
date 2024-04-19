@@ -5,7 +5,6 @@ public class Boruvka
     public Graph FindMST(Graph graph)
     {
         var mst = new Graph(graph.Vertices);
-        var allVertices = graph.Vertices.Count;
         var components = new List<Graph>();
         var cheapest = new Dictionary<Vertex, Edge>();
         var zeroVertex = new Vertex("0");
@@ -29,10 +28,10 @@ public class Boruvka
             {
                 if (InSameComponent(edge.Vertex1, edge.Vertex2, components))
                     continue;
-                if (cheapest[edge.Vertex1] == infEdge || cheapest[edge.Vertex2].Weight > edge.Weight)
-                    cheapest[edge.Vertex1] = edge;
                 if (cheapest[edge.Vertex1] == infEdge || cheapest[edge.Vertex1].Weight > edge.Weight)
                     cheapest[edge.Vertex1] = edge;
+                if (cheapest[edge.Vertex2] == infEdge || cheapest[edge.Vertex2].Weight > edge.Weight)
+                    cheapest[edge.Vertex2] = edge;
             }
 
             foreach (var vertex in mst.Vertices)
