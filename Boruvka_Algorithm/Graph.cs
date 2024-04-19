@@ -3,14 +3,14 @@ namespace Boruvka_Algorithm;
 public class Vertex
 {
     public string Name { get; set; }
-    internal HashSet<Vertex> Neighbors { get; }
-    internal HashSet<Edge> Edges { get; }
+    internal List<Vertex> Neighbors { get; }
+    internal List<Edge> Edges { get; }
 
     public Vertex(string name)
     {
         Name = name;
-        Neighbors = new HashSet<Vertex>();
-        Edges = new HashSet<Edge>();
+        Neighbors = new List<Vertex>();
+        Edges = new List<Edge>();
     }
 }
 
@@ -31,11 +31,13 @@ public class Edge
 
     private void AssignVertices()
     {
-        if (!Vertex1.Neighbors.Add(Vertex2))
+        if (Vertex1.Neighbors.Contains(Vertex2))
         {
+            Console.WriteLine("Edge is already exists");
             return;
         }
 
+        Vertex1.Neighbors.Add(Vertex2);
         Vertex2.Neighbors.Add(Vertex1);
         Vertex1.Edges.Add(this);
         Vertex2.Edges.Add(this);
@@ -44,16 +46,27 @@ public class Edge
 
 public class Graph
 {
-    public HashSet<Vertex> Vertices { get; }
-    public HashSet<Edge> Edges { get; }
+    public List<Vertex> Vertices { get; }
+    public List<Edge> Edges { get; }
 
-    public Graph(HashSet<Vertex> vertices, HashSet<Edge> edges)
+
+    public Graph(Graph graph1, Graph graph2)
+    {
+        Vertices = new List<Vertex>();
+        Edges = new List<Edge>();
+        graph1.Vertices.ForEach(v => Vertices.Add(v));
+        graph2.Vertices.ForEach(v => Vertices.Add(v));
+        graph1.Edges.ForEach(e => Edges.Add(e));
+        graph2.Edges.ForEach(e => Edges.Add(e));
+    }
+
+    public Graph(List<Vertex> vertices, List<Edge> edges)
     {
         Vertices = vertices;
         Edges = edges;
     }
 
-    public Graph(HashSet<Vertex> vertices)
+    public Graph(List<Vertex> vertices)
     {
         Vertices = vertices;
         Edges = new();
@@ -79,14 +92,14 @@ public class Graph
         return false;
     }
 
-    public HashSet<Vertex> GetNeighbors(Vertex vertex)
+    public List<Vertex> GetNeighbors(Vertex vertex)
     {
         return vertex.Neighbors;
     }
 
     public void AddVertex(Vertex vertex)
     {
-        if (Vertices.Add(vertex)) return;
+        if (Vertices.Contains(vertex)) return;
         Console.WriteLine("Error. Vertex already exists in the graph.");
     }
 
@@ -133,31 +146,18 @@ public class Graph
 
     public List<List<Vertex>> AdjacencyList()
     {
-        var adjacencyList = new List<List<Vertex>>();
-        foreach (var vertex in Vertices)
-        {
-            var neighbors = new List<Vertex>();
-            foreach (var neighbor in vertex.Neighbors)
-            {
-                neighbors.Add(neighbor);
-            }
-
-            adjacencyList.Add(neighbors);
-        }
-
-        return adjacencyList;
+        return Vertices.Select(vertex => vertex.Neighbors).ToList();
     }
 
 
     public int[,] AdjacencyMatrix()
     {
         var adjacencyMatrix = new int[Vertices.Count, Vertices.Count];
-        var vertexList = Vertices.ToList();
         for (var i = 0; i < Vertices.Count; i++)
         {
             for (var j = 0; j < Vertices.Count; j++)
             {
-                adjacencyMatrix[i, j] = FindEdgeWeight(vertexList[i], vertexList[j]);
+                adjacencyMatrix[i, j] = FindEdgeWeight(Vertices[i], Vertices[j]);
             }
         }
 

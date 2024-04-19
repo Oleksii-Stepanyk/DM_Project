@@ -2,7 +2,7 @@ namespace Boruvka_Algorithm;
 
 public static class Generator
 {
-    public static Graph GenerateGraph(HashSet<Vertex> vertices, double probability) // Erdős–Rényi model
+    public static Graph GenerateGraph(List<Vertex> vertices, double probability) // Erdős–Rényi model
     {
         Graph graph = new Graph(vertices);
         Random rand = new Random();
@@ -24,10 +24,10 @@ public static class Generator
         return graph;
     }
 
-    public static HashSet<Vertex> GenerateVertices(int count)
+    public static List<Vertex> GenerateVertices(int count)
     {
-        var vertices = new HashSet<Vertex>();
-        for (int i = 0; i < count; i++)
+        var vertices = new List<Vertex>();
+        for (int i = 1; i < count; i++)
         {
             vertices.Add(new Vertex(i.ToString()));
         }
