@@ -12,20 +12,20 @@ public class Boruvka
         var infEdge = new Edge(zeroVertex, zeroVertex, int.MaxValue);
 
         mst.Vertices.ForEach(v => components.Add(new Graph([v])));
-        foreach (var vertex in graph.Vertices)
+
+        foreach (var vertex in mst.Vertices)
         {
             cheapest.Add(vertex, infEdge);
         }
 
         while (components.Count != 1)
         {
-            for (var i = 0; i < mst.Vertices.Count; i++)
+            foreach (var vertex in mst.Vertices)
             {
-                var vertex = mst.Vertices[i];
                 cheapest[vertex] = infEdge;
             }
 
-            foreach (var edge in mst.Edges)
+            foreach (var edge in graph.Edges)
             {
                 if (InSameComponent(edge.Vertex1, edge.Vertex2, components))
                     continue;
