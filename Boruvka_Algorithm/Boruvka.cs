@@ -30,7 +30,11 @@ public class Boruvka
                     continue;
                 if (cheapest[edge.Vertex1] == infEdge || cheapest[edge.Vertex1].Weight > edge.Weight)
                     cheapest[edge.Vertex1] = edge;
+                if (cheapest[edge.Vertex1].Weight == edge.Weight)
+                    cheapest[edge.Vertex1] = edge;
                 if (cheapest[edge.Vertex2] == infEdge || cheapest[edge.Vertex2].Weight > edge.Weight)
+                    cheapest[edge.Vertex2] = edge;
+                if (cheapest[edge.Vertex2].Weight == edge.Weight)
                     cheapest[edge.Vertex2] = edge;
             }
 
@@ -45,9 +49,12 @@ public class Boruvka
                         mst.AddEdge(edge);
                         var graph1 = components.Find(c => c.Vertices.Contains(edge.Vertex1));
                         var graph2 = components.Find(c => c.Vertices.Contains(edge.Vertex2));
+                        var unionGraph = new Graph(graph1.Vertices.Union(graph2.Vertices).ToList(),
+                            graph1.Edges.Union(graph2.Edges).ToList());
+                        unionGraph.AddEdge(edge);
+                        components.Add(unionGraph);
                         components.Remove(graph1);
                         components.Remove(graph2);
-                        components.Add(new Graph(graph1, graph2));
                     }
                 }
             }
