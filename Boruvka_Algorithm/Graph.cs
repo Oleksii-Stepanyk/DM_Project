@@ -30,13 +30,7 @@ public class Edge
     }
 
     private void AssignVertices()
-    {
-        if (Vertex1.Neighbors.Contains(Vertex2))
-        {
-            Console.WriteLine("Edge is already exists");
-            return;
-        }
-
+    { 
         Vertex1.Neighbors.Add(Vertex2);
         Vertex2.Neighbors.Add(Vertex1);
         Vertex1.Edges.Add(this);
@@ -130,6 +124,12 @@ public class Graph
             return;
         }
 
+        if (Edges.Any(e => (e.Vertex1 == edge.Vertex1 && e.Vertex2 == edge.Vertex2) ||
+                           (e.Vertex1 == edge.Vertex2 && e.Vertex2 == edge.Vertex1)))
+        {
+            return;
+        }
+
         Edges.Add(edge);
     }
 
@@ -144,9 +144,28 @@ public class Graph
         Edges.Remove(edge);
     }
 
-    public List<List<Vertex>> AdjacencyList()
+    public Dictionary<Vertex, List<KeyValuePair<Vertex, int>>> AdjacencyList()
     {
-        return Vertices.Select(vertex => vertex.Neighbors).ToList();
+        var adjacencyList = new Dictionary<Vertex, List<KeyValuePair<Vertex, int>>>();
+        foreach (var vertex in Vertices)
+        {
+            var neighbors = new List<KeyValuePair<Vertex, int>>();
+            foreach (var edge in Edges)
+            {
+                if (edge.Vertex1 == vertex)
+                {
+                    neighbors.Add(new KeyValuePair<Vertex, int>(edge.Vertex2, edge.Weight));
+                }
+                else if (edge.Vertex2 == vertex)
+                {
+                    neighbors.Add(new KeyValuePair<Vertex, int>(edge.Vertex1, edge.Weight));
+                }
+            }
+
+            adjacencyList[vertex] = neighbors;
+        }
+
+        return adjacencyList;
     }
 
 

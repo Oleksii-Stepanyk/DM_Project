@@ -27,7 +27,7 @@ public static class Generator
     public static List<Vertex> GenerateVertices(int count)
     {
         var vertices = new List<Vertex>();
-        for (int i = 1; i < count; i++)
+        for (int i = 0; i < count; i++)
         {
             vertices.Add(new Vertex(i.ToString()));
         }
