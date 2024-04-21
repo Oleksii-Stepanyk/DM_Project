@@ -80,11 +80,6 @@ public class Graph
         return false;
     }
 
-    public List<Vertex> GetNeighbors(Vertex vertex)
-    {
-        return vertex.Neighbors;
-    }
-
     public void AddVertex(Vertex vertex)
     {
         if (Vertices.Contains(vertex)) return;
