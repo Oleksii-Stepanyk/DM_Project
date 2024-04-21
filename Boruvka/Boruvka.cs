@@ -7,8 +7,7 @@ public class Boruvka
         var mst = new Graph(adjacencyList.Keys.ToList());
         var components = new List<Graph>();
         var cheapest = new Dictionary<Vertex, Edge>();
-        var zeroVertex = new Vertex("0");
-        var infEdge = new Edge(zeroVertex, zeroVertex, int.MaxValue);
+        var infEdge = new Edge(new Vertex("_"), new Vertex("_"), int.MaxValue);
 
         mst.Vertices.ForEach(v => components.Add(new Graph([v])));
 
@@ -20,20 +19,20 @@ public class Boruvka
         while (components.Count > 1)
         {
             RefreshCheapest(mst, cheapest, infEdge);
+            Edge edge;
 
             foreach (var vertex in adjacencyList.Keys)
             {
                 foreach (var pair in adjacencyList[vertex])
                 {
-                    var edge = new Edge(vertex, pair.Key, pair.Value);
+                    edge = new Edge(vertex, pair.Key, pair.Value);
                     CheapestEdge(edge, cheapest, components, infEdge);
                 }
             }
 
             foreach (var vertex in mst.Vertices)
             {
-                var edge = cheapest[vertex];
-
+                edge = cheapest[vertex];
                 if (!InSameComponent(edge.Vertex1, edge.Vertex2, components)
                     && edge != infEdge && components.Count > 1)
                 {
@@ -48,16 +47,16 @@ public class Boruvka
     public Graph FindMST(int[,] adjacencyMatrix)
     {
         var vertices = new List<Vertex>();
-        for (int i = 0; i < adjacencyMatrix.GetLength(0); i++)
+        for (var i = 0; i < adjacencyMatrix.GetLength(0); i++)
         {
             vertices.Add(new Vertex(i.ToString()));
         }
 
+        var numberOfVertices = vertices.Count;
         var mst = new Graph(vertices);
         var components = new List<Graph>();
         var cheapest = new Dictionary<Vertex, Edge>();
-        var zeroVertex = new Vertex("...");
-        var infEdge = new Edge(zeroVertex, zeroVertex, int.MaxValue);
+        var infEdge = new Edge(new Vertex("_"), new Vertex("_"), int.MaxValue);
 
         mst.Vertices.ForEach(v => components.Add(new Graph([v])));
 
@@ -69,14 +68,15 @@ public class Boruvka
         while (components.Count > 1)
         {
             RefreshCheapest(mst, cheapest, infEdge);
-
-            for (int i = 0; i < adjacencyMatrix.GetLength(0); i++)
+            Edge edge;
+            
+            for (var i = 0; i < numberOfVertices; i++)
             {
-                for (int j = 0; j < adjacencyMatrix.GetLength(1); j++)
+                for (var j = 0; j < numberOfVertices; j++)
                 {
-                    if (adjacencyMatrix[i, j] != 0)
+                    if (adjacencyMatrix[i, j] == 0)
                     {
-                        var edge = new Edge(vertices[i], vertices[j], adjacencyMatrix[i, j]);
+                        edge = new Edge(vertices[i], vertices[j], adjacencyMatrix[i, j]);
                         CheapestEdge(edge, cheapest, components, infEdge);
                     }
                 }
@@ -84,9 +84,10 @@ public class Boruvka
 
             foreach (var vertex in mst.Vertices)
             {
-                var edge = cheapest[vertex];
+                edge = cheapest[vertex];
 
-                if (!InSameComponent(edge.Vertex1, edge.Vertex2, components) && edge != infEdge && components.Count > 1)
+                if (!InSameComponent(edge.Vertex1, edge.Vertex2, components)
+                    && edge != infEdge && components.Count > 1)
                 {
                     UnionGraphs(components, edge, mst);
                 }
@@ -98,7 +99,13 @@ public class Boruvka
 
     private static bool InSameComponent(Vertex vertex1, Vertex vertex2, List<Graph> components)
     {
-        return components.Any(component => component.Adjacent(vertex1, vertex2));
+        foreach (var component in components)
+        {
+            if (!component.Adjacent(vertex1, vertex2)) continue;
+            return true;
+        }
+
+        return false;
     }
 
     private static void CheapestEdge(Edge edge, Dictionary<Vertex, Edge> cheapest, List<Graph> components, Edge infEdge)

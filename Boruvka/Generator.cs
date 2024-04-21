@@ -4,8 +4,8 @@ public static class Generator
 {
     public static Graph GenerateGraph(List<Vertex> vertices, double probability) // Erdős–Rényi model
     {
-        Graph graph = new Graph(vertices);
-        Random rand = new Random();
+        var graph = new Graph(vertices);
+        var rand = new Random();
 
         for (int i = 0; i < vertices.Count; i++)
         {
@@ -13,9 +13,9 @@ public static class Generator
             {
                 if ((double)rand.NextInt64(1, 100) / 100 < probability)
                 {
-                    Vertex vertex1 = vertices.ElementAt(i);
-                    Vertex vertex2 = vertices.ElementAt(j);
-                    Edge edge = new Edge(vertex1, vertex2, rand.Next(1, 75));
+                    var vertex1 = vertices.ElementAt(i);
+                    var vertex2 = vertices.ElementAt(j);
+                    var edge = new Edge(vertex1, vertex2, rand.Next(1, 75));
                     graph.AddEdge(edge);
                 }
             }
