@@ -4,13 +4,11 @@ public class Vertex
 {
     public string Name { get; set; }
     internal List<Vertex> Neighbors { get; }
-    internal List<Edge> Edges { get; }
 
     public Vertex(string name)
     {
         Name = name;
         Neighbors = new List<Vertex>();
-        Edges = new List<Edge>();
     }
 }
 
@@ -33,8 +31,6 @@ public class Edge
     { 
         Vertex1.Neighbors.Add(Vertex2);
         Vertex2.Neighbors.Add(Vertex1);
-        Vertex1.Edges.Add(this);
-        Vertex2.Edges.Add(this);
     }
 }
 
@@ -50,8 +46,6 @@ public class Graph
         Edges = new List<Edge>();
         graph1.Vertices.ForEach(v => Vertices.Add(v));
         graph2.Vertices.ForEach(v => Vertices.Add(v));
-        graph1.Edges.ForEach(e => Edges.Add(e));
-        graph2.Edges.ForEach(e => Edges.Add(e));
     }
 
     public Graph(List<Vertex> vertices, List<Edge> edges)
@@ -177,6 +171,52 @@ public class Graph
             for (var j = 0; j < Vertices.Count; j++)
             {
                 adjacencyMatrix[i, j] = FindEdgeWeight(Vertices[i], Vertices[j]);
+            }
+        }
+
+        return adjacencyMatrix;
+    }
+    
+    public Dictionary<Vertex, List<KeyValuePair<Vertex, int>>> MatrixToList(int[,] adjacencyMatrix)
+    {
+        var adjacencyList = new Dictionary<Vertex, List<KeyValuePair<Vertex, int>>>();
+        var vertices = new List<Vertex>();
+        foreach (var vertex in adjacencyMatrix)
+        {
+            vertices.Add(new Vertex(vertex.ToString()));
+        }
+
+        var numberOfVertices = vertices.Count;
+
+        for (int i = 0; i < numberOfVertices; i++)
+        {
+            var neighbors = new List<KeyValuePair<Vertex, int>>();
+            
+            for (int j = 0; j < numberOfVertices; j++)
+            {
+                if (adjacencyMatrix[i, j] != 0)
+                {
+                    neighbors.Add(new KeyValuePair<Vertex, int>(vertices[j], adjacencyMatrix[i, j]));
+                }
+            }
+            adjacencyList[vertices[i]] = neighbors;
+        }
+
+        return adjacencyList;
+    }
+
+    public int[,] ListToMatrix(Dictionary<Vertex, List<KeyValuePair<Vertex, int>>> adjacencyList)
+    {
+        var vertices = adjacencyList.Keys.ToList();
+        var adjacencyMatrix = new int[vertices.Count, vertices.Count];
+
+        foreach (var vertex in adjacencyList.Keys)
+        {
+            var i = vertices.IndexOf(vertex);
+            foreach (var neighbor in adjacencyList[vertex])
+            {
+                var j = vertices.IndexOf(neighbor.Key);
+                adjacencyMatrix[i, j] = neighbor.Value;
             }
         }
 

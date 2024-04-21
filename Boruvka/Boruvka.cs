@@ -47,9 +47,9 @@ public class Boruvka
     public Graph FindMST(int[,] adjacencyMatrix)
     {
         var vertices = new List<Vertex>();
-        for (var i = 0; i < adjacencyMatrix.GetLength(0); i++)
+        foreach (var vertex in adjacencyMatrix)
         {
-            vertices.Add(new Vertex(i.ToString()));
+            vertices.Add(new Vertex(vertex.ToString()));
         }
 
         var numberOfVertices = vertices.Count;
