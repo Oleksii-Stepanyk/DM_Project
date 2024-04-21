@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.7)  21 APR 2024 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.7)  21 APR 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
 \c@section=\count189
@@ -50,6 +50,41 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@dimlist=\toks18
 
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrextend.s
+ty
+Package: scrextend 2023/07/07 v3.41 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.st
+y
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
+y
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-ho
+ok.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+)))
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 4.
+
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip50
@@ -122,7 +157,27 @@ LaTeX Info: Redefining \] on input line 2954.
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+) (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
@@ -130,7 +185,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count277
-\U@D=\dimen158
+\U@D=\dimen160
 \l@unhyphenated=\language79
 
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
@@ -368,65 +423,23 @@ Package babel Info: Default for \cyrdash is provided on input line 142.
 Package babel Info: Importing font and identification data for ukrainian
 (babel)             from babel-uk.ini. Reported on input line 11.
 )
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
-)
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen161
-\captionmargin=\dimen162
-\caption@leftmargin=\dimen163
-\caption@rightmargin=\dimen164
-\caption@width=\dimen165
-\caption@indent=\dimen166
-\caption@parindent=\dimen167
-\caption@hangindent=\dimen168
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count279
-\c@continuedfloat=\count280
-)
-Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count281
-Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count282
-)
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count283
+\l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box53
 ) (DM_Project.aux
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 6
 .
 
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+)
+
+LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 6.
+
+)
 \openout1 = `DM_Project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -453,7 +466,7 @@ LaTeX Font Info:    ... okay on input line 15.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
@@ -465,276 +478,415 @@ LaTeX Font Info:    ... okay on input line 15.
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=95.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=11.69997pt plus 5.19942pt minus 2.60054pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \th on input line 15.
 
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen169
+\scratchcounter=\count280
+\scratchdimen=\dimen161
 \scratchbox=\box54
-\nofMPsegments=\count285
-\nofMParguments=\count286
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen170
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen162
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks27
 )
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-<graph.png, id=1, 482.80376pt x 401.5pt>
+LaTeX Info: Redefining \th on input line 15.
+
+
+LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <22.46396> not available
+(Font)              size <20.74> substituted on input line 16.
+
+
+LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 16.
+
+LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 16
+.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 16.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 16.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 16.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 16.
+
+[1
+
+{C:/Users/ostep/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `T2A/cmr/bx/n' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `T2A/cmr/bx/n' in size <15.59996> not available
+(Font)              size <14.4> substituted on input line 18.
+
+<graph.png, id=7, 482.80376pt x 401.5pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 21.
+Package pdftex.def Info: graph.png  used on input line 22.
 (pdftex.def)             Requested size: 482.80258pt x 401.49901pt.
 
-Overfull \hbox (16.73053pt too wide) in paragraph at lines 21--22
+Overfull \hbox (14.10571pt too wide) in paragraph at lines 22--23
 [][] 
  []
 
+
+LaTeX Font Warning: Font shape `T2A/cmr/bx/n' in size <13> not available
+(Font)              size <12> substituted on input line 25.
+
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-28.
+29.
 (C:\Users\ostep\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-[1
 
-{C:/Users/ostep/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./graph.png>
-]
-Overfull \hbox (28.703pt too wide) in paragraph at lines 43--43
+LaTeX Font Warning: Font shape `T2A/cmtt/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+[1 <./graph.png>]
+Overfull \hbox (28.703pt too wide) in paragraph at lines 44--44
 []   \T2A/cmtt/m/n/12 find the edge e with the smallest weight that connects S 
 with a vertex outside S[] 
  []
 
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 46.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 84.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
 
 [3]
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 99--127
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 100--128
 [][] [] 
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 129--157
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 130--158
 [][] [] 
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 159--187
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 160--188
 [][] [] 
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 189--217
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 190--218
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 219--247
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 220--248
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 249--277
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 250--278
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 279--307
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 280--308
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 309--337
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 310--338
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 339--367
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 340--368
 [][] [] 
  []
 
 
-Overfull \hbox (12.2791pt too wide) in paragraph at lines 369--397
+Overfull \hbox (12.2791pt too wide) in paragraph at lines 370--398
 [][] [] 
  []
 
-<20-38.png, id=27, 501.875pt x 602.25pt>
+<20-38.png, id=30, 501.875pt x 602.25pt>
 File: 20-38.png Graphic file (type png)
 <use 20-38.png>
-Package pdftex.def Info: 20-38.png  used on input line 398.
+Package pdftex.def Info: 20-38.png  used on input line 399.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<38-56.png, id=28, 501.875pt x 602.25pt>
+<38-56.png, id=31, 501.875pt x 602.25pt>
 File: 38-56.png Graphic file (type png)
 <use 38-56.png>
-Package pdftex.def Info: 38-56.png  used on input line 399.
+Package pdftex.def Info: 38-56.png  used on input line 400.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<56-74.png, id=29, 376.40625pt x 397.485pt>
+<56-74.png, id=32, 376.40625pt x 397.485pt>
 File: 56-74.png Graphic file (type png)
 <use 56-74.png>
-Package pdftex.def Info: 56-74.png  used on input line 400.
+Package pdftex.def Info: 56-74.png  used on input line 401.
 (pdftex.def)             Requested size: 241.84843pt x 255.39633pt.
-<74-92.png, id=30, 376.40625pt x 395.97937pt>
+<74-92.png, id=33, 376.40625pt x 395.97937pt>
 File: 74-92.png Graphic file (type png)
 <use 74-92.png>
-Package pdftex.def Info: 74-92.png  used on input line 401.
+Package pdftex.def Info: 74-92.png  used on input line 402.
 (pdftex.def)             Requested size: 241.84843pt x 254.42892pt.
-<92-110.png, id=31, 376.40625pt x 395.97937pt>
+<92-110.png, id=34, 376.40625pt x 395.97937pt>
 File: 92-110.png Graphic file (type png)
 <use 92-110.png>
-Package pdftex.def Info: 92-110.png  used on input line 402.
+Package pdftex.def Info: 92-110.png  used on input line 403.
 (pdftex.def)             Requested size: 241.84843pt x 254.42892pt.
-<110-128.png, id=32, 501.875pt x 602.25pt>
+<110-128.png, id=35, 501.875pt x 602.25pt>
 File: 110-128.png Graphic file (type png)
 <use 110-128.png>
-Package pdftex.def Info: 110-128.png  used on input line 403.
+Package pdftex.def Info: 110-128.png  used on input line 404.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<128-146.png, id=33, 501.875pt x 602.25pt>
+<128-146.png, id=36, 501.875pt x 602.25pt>
 File: 128-146.png Graphic file (type png)
 <use 128-146.png>
-Package pdftex.def Info: 128-146.png  used on input line 404.
+Package pdftex.def Info: 128-146.png  used on input line 405.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<146-164.png, id=34, 501.875pt x 602.25pt>
+<146-164.png, id=37, 501.875pt x 602.25pt>
 File: 146-164.png Graphic file (type png)
 <use 146-164.png>
-Package pdftex.def Info: 146-164.png  used on input line 405.
+Package pdftex.def Info: 146-164.png  used on input line 406.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<164-182.png, id=35, 501.875pt x 602.25pt>
+<164-182.png, id=38, 501.875pt x 602.25pt>
 File: 164-182.png Graphic file (type png)
 <use 164-182.png>
-Package pdftex.def Info: 164-182.png  used on input line 406.
+Package pdftex.def Info: 164-182.png  used on input line 407.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
-<182-200.png, id=36, 501.875pt x 602.25pt>
+<182-200.png, id=39, 501.875pt x 602.25pt>
 File: 182-200.png Graphic file (type png)
 <use 182-200.png>
-Package pdftex.def Info: 182-200.png  used on input line 407.
+Package pdftex.def Info: 182-200.png  used on input line 408.
 (pdftex.def)             Requested size: 241.84843pt x 290.2254pt.
 
-Overfull \hbox (20.2353pt too wide) in paragraph at lines 398--408
+Overfull \hbox (17.61049pt too wide) in paragraph at lines 399--409
 [][] []
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 398--408
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 399--409
 [] []
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 398--408
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 399--409
 [] []
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 398--408
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 399--409
 [] []
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 398--408
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 399--409
 [] [] 
  []
 
+[4] [5] [6 <./20-38.png> <./38-56.png>] [7 <./56-74.png> <./74-92.png> <./92-11
+0.png> <./110-128.png>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Warning: Font shape `T2A/cmr/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 413.
 
- [4]
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./20-38.png> <./38-56.png> <./56-74.png> <./74-92.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 411--415
 
- [7 <./92-110.png> <./110-128.png> <./128-146.png> <./146-164.png>] [8 <./164-1
-82.png> <./182-200.png>] (DM_Project.aux)
+ []
+
+[8 <./128-146.png> <./146-164.png> <./164-182.png> <./182-200.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+LaTeX Font Warning: Font shape `T2A/cmr/bx/it' in size <13> not available
+(Font)              size <12> substituted on input line 438.
+
+[10] (DM_Project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.72395pt have occurred.
+
  ) 
 Here is how much of TeX's memory you used:
- 5992 strings out of 474423
- 98740 string characters out of 5741719
- 1973496 words of memory out of 5000000
- 28293 multiletter control sequences out of 15000+600000
- 569168 words of font info for 62 fonts, out of 8000000 for 9000
+ 5953 strings out of 474423
+ 98708 string characters out of 5741719
+ 1971496 words of memory out of 5000000
+ 28211 multiletter control sequences out of 15000+600000
+ 572982 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,10n,77p,911b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\
-latt1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\labx1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\larm1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\labx1440.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\labx1728.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/
-ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Users/ostep/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ostep/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ostep/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ostep/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
-ostep/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on DM_Project.pdf (8 pages, 489750 bytes).
+ 108i,10n,107p,1092b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labi12
+00.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+ti1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\tcrm1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\latt1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
+-t2a/dpi600\labx1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\larm1200.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\ostep\AppData\Local\MiKTeX\fonts
+/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\ostep\AppData\Local\MiKTeX\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Users/ostep/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ostep/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ostep/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users
+/ostep/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/ostep/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+9.pfb><C:/Users/ostep/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Users/ostep/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy9.pfb>
+Output written on DM_Project.pdf (11 pages, 549396 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
+ 531 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
