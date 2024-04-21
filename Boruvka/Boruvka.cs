@@ -74,7 +74,7 @@ public class Boruvka
             {
                 for (var j = 0; j < numberOfVertices; j++)
                 {
-                    if (adjacencyMatrix[i, j] == 0)
+                    if (adjacencyMatrix[i, j] != 0)
                     {
                         edge = new Edge(vertices[i], vertices[j], adjacencyMatrix[i, j]);
                         CheapestEdge(edge, cheapest, components, infEdge);
