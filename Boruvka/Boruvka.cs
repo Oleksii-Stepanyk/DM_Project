@@ -16,9 +16,7 @@ public class Boruvka
             cheapest.Add(vertex, infEdge);
         }
 
-        var completed = false;
-
-        while (!completed)
+        while (components.Count > 1)
         {
             RefreshCheapest(mst, cheapest, infEdge);
             Edge edge;
@@ -35,22 +33,10 @@ public class Boruvka
             foreach (var vertex in mst.Vertices)
             {
                 edge = cheapest[vertex];
-                if (edge != infEdge) continue;
-                completed = true;
-            }
-
-            foreach (var vertex in mst.Vertices)
-            {
-                edge = cheapest[vertex];
                 if (!InSameComponent(edge.Vertex1, edge.Vertex2, components)
                     && edge != infEdge && components.Count > 1)
                 {
                     UnionGraphs(components, edge, mst);
-                }
-
-                if (components.Count == 1)
-                {
-                    completed = true;
                 }
             }
         }
@@ -78,9 +64,8 @@ public class Boruvka
         {
             cheapest.Add(vertex, infEdge);
         }
-
-        var completed = false;
-        while (!completed)
+        
+        while (components.Count > 1)
         {
             RefreshCheapest(mst, cheapest, infEdge);
             Edge edge;
@@ -96,13 +81,6 @@ public class Boruvka
                     }
                 }
             }
-
-            foreach (var vertex in mst.Vertices)
-            {
-                edge = cheapest[vertex];
-                if (edge != infEdge) continue;
-                completed = true;
-            }
             
             foreach (var vertex in mst.Vertices)
             {
@@ -112,10 +90,6 @@ public class Boruvka
                     && edge != infEdge && components.Count > 1)
                 {
                     UnionGraphs(components, edge, mst);
-                }
-                if (components.Count == 1)
-                {
-                    completed = true;
                 }
             }
         }
